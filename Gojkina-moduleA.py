@@ -34,6 +34,7 @@ def show_all():
         print(f"{word:12} → {synonyms[word]}")
     
     print("-" * 30)
+    
     print(f"Всего пар: {len(synonyms)}")
 
 def main():
