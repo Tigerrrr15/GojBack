@@ -14,6 +14,7 @@ def show_menu():
     print("\n" + "="*40)
     print("ЛЕКСИКОН СИНОНИМОВ")
     print("="*40)
+    
     print("1. Поиск синонима")
     print("2. Добавить новую пару")
     print("3. Показать все слова")
@@ -34,7 +35,7 @@ def show_all():
         print(f"{word:12} → {synonyms[word]}")
     
     print("-" * 30)
-    
+
     print(f"Всего пар: {len(synonyms)}")
 
 def main():
