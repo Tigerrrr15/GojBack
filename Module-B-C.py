@@ -30,3 +30,4 @@ def add_new_pair(word=None):
     # Добавление новой пары
     synonyms[word] = synonym
     print(f"✅ Пара '{word} - {synonym}' успешно добавлена!")
+    
