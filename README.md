@@ -75,15 +75,15 @@
 ```bash
 pip install pytest flake8 black
 
-###Запуск тестов
+Запуск тестов
 bash
 pytest tests/ -v
 
-###Проверка стиля кода
+Проверка стиля кода
 bash
 flake8 src/
 
-###Форматирование кода
+Форматирование кода
 bash
 black src/
 
