@@ -76,14 +76,14 @@
 pip install pytest flake8 black
 
 Запуск тестов
-bash
+```bash
 pytest tests/ -v
 
 Проверка стиля кода
-bash
+```bash
 flake8 src/
 
 Форматирование кода
-bash
+```bash
 black src/
 
