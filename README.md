@@ -71,19 +71,19 @@
 
 ## Разработка
 
-### Установка зависимостей для разработки
+### Установка зависимостей
 ```bash
-pip install pytest flake8 black
+pip install -r requirements.txt
 
 Запуск тестов
-```bash
+bash
 pytest tests/ -v
 
 Проверка стиля кода
-```bash
+bash
 flake8 src/
 
 Форматирование кода
-```bash
+bash
 black src/
-
+text
