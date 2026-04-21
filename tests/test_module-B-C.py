@@ -1,5 +1,6 @@
-import pytest
-from unittest.mock import patch, call
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent / 'src'))
 
 # Замените 'src.synonym_module' на реальный путь к вашему файлу
 from src.synonym_module import add_new_pair, synonyms
