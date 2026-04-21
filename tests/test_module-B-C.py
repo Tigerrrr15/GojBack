@@ -1,5 +1,4 @@
-import sys
-from pathlib import Path
+from src.synonym_module import add_new_pair, synonyms
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
