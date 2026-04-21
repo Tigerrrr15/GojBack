@@ -1,3 +1,5 @@
+[![Python CI](https://github.com/Tigerrrr15/GojBack/actions/workflows/ci.yml/badge.svg)](https://github.com/Tigerrrr15/GojBack/actions/workflows/ci.yml)
+
 ## Словарь синонимов
 Консольное приложение для работы со словарем синонимов. Позволяет искать синонимы, добавлять новые пары слов и просматривать весь лексикон.
 
