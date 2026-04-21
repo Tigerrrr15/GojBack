@@ -1,6 +1,7 @@
 import sys
 from pathlib import Path
-sys.path.insert(0, str(Path(__file__).parent.parent / 'src'))
+
+sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 # Замените 'src.synonym_module' на реальный путь к вашему файлу
 from src.synonym_module import add_new_pair, synonyms
@@ -25,9 +26,10 @@ def test_add_new_pair_обычный_случай():
 
     # Act (действие)
     # Подменяем input, чтобы он возвращал "радость", и print, чтобы он ничего не выводил в консоль
-    with patch("builtins.input", side_effect=mocked_inputs), patch(
-        "builtins.print"
-    ) as mock_print:
+    with (
+        patch("builtins.input", side_effect=mocked_inputs),
+        patch("builtins.print") as mock_print,
+    ):
         add_new_pair(входные_данные)
 
     # Assert (проверка)
@@ -79,9 +81,10 @@ def test_search_synonym_обычный_случай():
     ожидаемый_результат = "Синоним слова 'кот': кошка"
 
     # Act (действие)
-    with patch("builtins.input", side_effect=входные_данные), patch(
-        "builtins.print"
-    ) as mock_print:
+    with (
+        patch("builtins.input", side_effect=входные_данные),
+        patch("builtins.print") as mock_print,
+    ):
         search_synonym()
         # Извлекаем то, что функция попыталась напечатать
         фактический_результат = mock_print.call_args[0][0]
@@ -97,9 +100,10 @@ def test_search_synonym_граничный_случай():
     ожидаемый_результат = "Слово 'несуществующее_слово' не найдено в лексиконе."
 
     # Act (действие)
-    with patch("builtins.input", side_effect=входные_данные), patch(
-        "builtins.print"
-    ) as mock_print:
+    with (
+        patch("builtins.input", side_effect=входные_данные),
+        patch("builtins.print") as mock_print,
+    ):
         search_synonym()
         фактический_результат = mock_print.call_args_list[0][0][0]
 
